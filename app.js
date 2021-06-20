@@ -12,17 +12,20 @@
 
 var btnTranslate = document.querySelector("#btn-translate");
 var txtInput = document.querySelector("#txt-input");
+var outputDiv = document.querySelector("#output");
 
-console.log(txtInput);
+
+   
+
+
 
 function clickHandler (){
+ outputDiv.innerText= "hbfehifvnreifjh eruif " + txtInput.value;
 
-    console.log("clicked");
-    console.log("input" , txtInput.value);
 
 };
 
-btnTranslate.addEventListener("click", clickHandler);
+btnTranslate.addEventListener("click", clickHandler);    //this object is called document object model
 
 // document.querySelector   : it is an API
 // addEventListener    :  it is also an API

@@ -15,10 +15,23 @@
     <style>
         textarea {
             width: 90%;
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             height: 20vh;
             margin: 1rem;
             padding: 1rem;
+        }
+
+
+        #output {
+           
+            border: 2px solid black;
+            height: 10vh;
+            width: 80%;
+            margin: 1rem;
+            padding: 1rem;
+
         }
     </style>
 
@@ -28,16 +41,15 @@
 
     <h1>talk banana</h1>
 
-    <textarea 
-    id="txt-input"
-    placeholder="Put your sentence in Engligh and it woill be  converted into Banana language!"></textarea>
+    <textarea id="txt-input"
+        placeholder="Put your sentence in Engligh and it woill be  converted into Banana language!"></textarea>
 
     <button id="btn-translate">Translate</button>
 
 
+    <div style="font-size: large;"> The output will be shown here 👇🏼 </div>
 
-
-
+    <div id="output"> </div>
     <script src="app.js" type="text/javascript"></script>
 </body>
 
